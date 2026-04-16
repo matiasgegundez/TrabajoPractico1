@@ -63,3 +63,26 @@ console.log(todosCaros);
 // 10
 let incluyeCampera = nombres.includes("Campera");
 console.log(incluyeCampera);
+
+// =======================
+// PARTE 4
+// =======================
+
+// 11
+let ordenados = [...productos].sort((a, b) => a.precio - b.precio);
+console.log(ordenados);
+
+// 12
+let mensajes = productos.map(p => 
+    `El producto ${p.nombre} cuesta $${p.precio} y pertenece a la categoría ${p.categoria}`
+);
+console.log(mensajes);
+
+// 13
+let nuevosProductos = [
+    { id: 6, nombre: "Medias", precio: 800, categoria: "Ropa" },
+    { id: 7, nombre: "Sandalias", precio: 3000, categoria: "Calzado" }
+];
+
+let todosLosProductos = [...productos, ...nuevosProductos];
+console.log(todosLosProductos);
