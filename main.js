@@ -26,3 +26,23 @@ for (let producto of productos) {
 productos.forEach(producto => {
     console.log(`Producto: ${producto.nombre} - Precio: $${producto.precio}`);
 });
+
+// =======================
+// PARTE 2
+// =======================
+
+// 4
+let nombres = productos.map(p => p.nombre);
+console.log(nombres);
+
+// 5
+let ropa = productos.filter(p => p.categoria === "Ropa");
+console.log(ropa);
+
+// 6
+let caros = productos.filter(p => p.precio > 3000);
+console.log(caros);
+
+// 7
+let gorra = productos.find(p => p.nombre === "Gorra");
+console.log(gorra);
