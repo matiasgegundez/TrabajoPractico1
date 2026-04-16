@@ -46,3 +46,20 @@ console.log(caros);
 // 7
 let gorra = productos.find(p => p.nombre === "Gorra");
 console.log(gorra);
+
+
+// =======================
+// PARTE 3
+// =======================
+
+// 8
+let hayMuyCaro = productos.some(p => p.precio > 10000);
+console.log(hayMuyCaro);
+
+// 9
+let todosCaros = productos.every(p => p.precio > 1000);
+console.log(todosCaros);
+
+// 10
+let incluyeCampera = nombres.includes("Campera");
+console.log(incluyeCampera);
